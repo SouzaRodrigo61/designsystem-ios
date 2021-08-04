@@ -1,0 +1,43 @@
+name: Design System
+
+options:
+  bundleIdPrefix: io.souzarodrigo
+  deploymentTarget:
+    iOS: 12.0
+
+settings:
+  DEVELOPMENT_TEAM:
+
+targets:
+  Design System:
+    type: application
+    platform: iOS
+    sources:
+      - Design System
+    scheme:
+      testTargets:
+        - Design SystemTests
+    dependencies:
+      - framework: Core.framework
+        implicit: true
+      - framework: Account.framework
+        implicit: true
+    settings:
+      base:
+        INFOPLIST_FILE: Design System/Info.plist
+  Design SystemTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - Design SystemTests
+    dependencies:
+      - target: Design System
+
+fileGroups: [Modular/Core/Core.xcodeproj, Modular/Account/Account.xcodeproj]
+# projects:
+#   Design System:
+#     path: Design System
+#     spec: Design System/project.yml
+#   Modular:
+#     path: Modular
+#     spec: Modular/project.yml

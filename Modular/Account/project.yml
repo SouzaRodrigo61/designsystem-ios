@@ -1,0 +1,28 @@
+name: Account
+options:
+  bundleIdPrefix: io.souzarodrigo
+  deploymentTarget:
+    iOS: 10.0
+settings:
+  DEVELOPMENT_TEAM:
+targets:
+  Account:
+    platform: iOS
+    type: framework
+    sources:
+      - Account/
+    dependencies:
+      - target: Resources
+  AccountTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - AccountTests/
+    dependencies:
+      - target: Account
+  Resources:
+    type: bundle
+    platform: iOS
+    sources:
+      - Resources/
+      - path: Resources

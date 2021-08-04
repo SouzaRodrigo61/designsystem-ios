@@ -1,0 +1,20 @@
+name: Core
+options:
+  bundleIdPrefix: io.souzarodrigo
+  deploymentTarget:
+    iOS: 10.0
+settings:
+  DEVELOPMENT_TEAM:
+targets:
+  Core:
+    platform: iOS
+    type: framework
+    sources:
+      - Core/
+  CoreTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - CoreTests/
+    dependencies:
+      - target: Core
