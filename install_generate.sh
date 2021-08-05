@@ -22,7 +22,7 @@ xcodegenGenerate() {
 
 	echo 'Entrando no modulos para gerar os modulos primeiros'
   #Generate Feature Module
-  cd Modular
+  cd Modules
 
   #Generate Core Module
   cd Core
@@ -31,6 +31,11 @@ xcodegenGenerate() {
   #Generate Account Module
   cd ..
   cd Account
+  xcodegen generate
+
+  #Generate Account Module
+  cd ..
+  cd Home
   xcodegen generate
 
   #Generate App

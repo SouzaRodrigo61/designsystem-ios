@@ -2,7 +2,7 @@
 //  AccountLog.swift
 //  Account
 //
-//  Created by Fachri Febrian on 18/05/2019.
+//  Created by Rodrigo Santos on 04/08/21.
 //
 
 import Foundation

@@ -2,13 +2,12 @@
 //  Log.swift
 //  Core
 //
-//  Created by Fachri Febrian on 17/05/2019.
-//  Copyright © 2019 fachrifaul. All rights reserved.
+//  Created by Rodrigo Santos on 04/08/21.
 //
 
 import Foundation
 
-public class Log {
+public class CoreLog {
     
     public static func d(_ text: String) {
         print("#Core_Debug : \(text)")

@@ -1,0 +1,28 @@
+name: Home
+options:
+  bundleIdPrefix: io.souzarodrigo
+  deploymentTarget:
+    iOS: 10.0
+settings:
+  DEVELOPMENT_TEAM:
+targets:
+  Home:
+    platform: iOS
+    type: framework
+    sources:
+      - Home/
+    dependencies:
+      - target: HomeResources
+  HomeTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - HomeTests/
+    dependencies:
+      - target: Home
+  HomeResources:
+    type: bundle
+    platform: iOS
+    sources:
+      - Resources/
+      - path: Resources

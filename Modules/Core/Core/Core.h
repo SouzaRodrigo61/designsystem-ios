@@ -2,8 +2,7 @@
 //  Core.h
 //  Core
 //
-//  Created by Fachri Febrian on 17/05/2019.
-//  Copyright © 2019 fachrifaul. All rights reserved.
+//  Created by Rodrigo Santos on 04/08/21.
 //
 
 #import <UIKit/UIKit.h>

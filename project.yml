@@ -18,6 +18,8 @@ targets:
       testTargets:
         - Design SystemTests
     dependencies:
+      - framework: Home.framework
+        implicit: true
       - framework: Core.framework
         implicit: true
       - framework: Account.framework
@@ -33,7 +35,12 @@ targets:
     dependencies:
       - target: Design System
 
-fileGroups: [Modular/Core/Core.xcodeproj, Modular/Account/Account.xcodeproj]
+fileGroups:
+  [
+    Modules/Core/Core.xcodeproj,
+    Modules/Account/Account.xcodeproj,
+    Modules/Home/Home.xcodeproj,
+  ]
 # projects:
 #   Design System:
 #     path: Design System

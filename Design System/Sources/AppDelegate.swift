@@ -9,6 +9,7 @@
 import UIKit
 import Core
 import Account
+import Home
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,8 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        Log.d("Core depedency inject by xcodegen")
+        CoreLog.d("Core depedency inject by xcodegen")
         AccountLog.d("Account depedency inject by xcodegen")
+        HomeLog.d("Home depedency inject by xcodegen")
         
         return true
     }

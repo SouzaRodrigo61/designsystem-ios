@@ -12,7 +12,7 @@ targets:
     sources:
       - Account/
     dependencies:
-      - target: Resources
+      - target: AccountResources
   AccountTests:
     type: bundle.unit-test
     platform: iOS
@@ -20,7 +20,7 @@ targets:
       - AccountTests/
     dependencies:
       - target: Account
-  Resources:
+  AccountResources:
     type: bundle
     platform: iOS
     sources:
