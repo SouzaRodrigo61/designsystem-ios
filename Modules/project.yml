@@ -1,0 +1,7 @@
+name: Modules
+
+projectReferences:
+  Core:
+    path: Core/Core.xcodeproj
+  Account:
+    path: Account/Account.xcodeproj

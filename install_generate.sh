@@ -22,7 +22,7 @@ xcodegenGenerate() {
 
 	echo 'Entrando no modulos para gerar os modulos primeiros'
   #Generate Feature Module
-  cd Modular
+  cd Modules
 
   #Generate Core Module
   cd Core
@@ -96,7 +96,7 @@ case $option in
 ;;
 esac
 
-xed .
+open "Design System.xcodeproj"
 xcodegen dump --type graphviz --file ../Documents/Graph.viz
 xcodegen dump --type json --file ../Documents/Graph.json
 echo " ╔═══════════════════════╗"

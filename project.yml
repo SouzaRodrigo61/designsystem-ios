@@ -33,7 +33,8 @@ targets:
     dependencies:
       - target: Design System
 
-fileGroups: [Modular/Core/Core.xcodeproj, Modular/Account/Account.xcodeproj]
+include:
+  - path: Modules/project.yml
 # projects:
 #   Design System:
 #     path: Design System
