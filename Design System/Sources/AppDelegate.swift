@@ -1,9 +1,8 @@
 //
 //  AppDelegate.swift
-//  FachriApp
+//  Design System
 //
-//  Created by Fachri Febrian on 17/05/2019.
-//  Copyright © 2019 fachrifaul. All rights reserved.
+//  Created by Rodrigo Santos on 13/08/21.
 //
 
 import UIKit
@@ -18,9 +17,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        CoreLog.d("Core depedency inject by xcodegen")
-        AccountLog.d("Account depedency inject by xcodegen")
-        HomeLog.d("Home depedency inject by xcodegen")
+        // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
+        // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
+        // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
+        window = UIWindow(frame: UIScreen.main.bounds)
+        
+        // Main Builder
+        
+        window?.rootViewController = UIViewController()
+        
+        window?.makeKeyAndVisible()
         
         return true
     }
