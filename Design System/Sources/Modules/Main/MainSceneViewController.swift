@@ -8,6 +8,15 @@
 import Foundation
 import UIKit
 
+protocol MainSceneViewControllerInput: AnyObject {
+    // func showLogingSuccess(fullUserName: String)
+    // func showLogingFailure(message: String)
+}
+
+protocol MainSceneViewControllerOutput: AnyObject {
+    // func tryToLogIn()
+}
+
 final class MainSceneViewController: UIViewController {
     
     override func viewDidLoad() {
@@ -20,10 +29,14 @@ final class MainSceneViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         
-        // Prefere Large 
+        // Prefere Large
         navigationController?.navigationItem.largeTitleDisplayMode = .always
         navigationController?.navigationBar.prefersLargeTitles = true
     }
+
+}
+
+extension MainSceneViewController: MainSceneViewControllerInput {
 
     
 }
